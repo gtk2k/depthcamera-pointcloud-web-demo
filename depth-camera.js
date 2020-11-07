@@ -110,8 +110,7 @@
     const devices = all_devices.filter((device) => (
         device.kind == "videoinput" &&
         device.label.includes("RealSense") &&
-        device.label.includes("RGB") &&
-        !device.label.includes("Depth") &&
+        device.label.includes("Module RGB") &&
         device.deviceId != depth_device_id));
 
     if (devices.length < 1) {
